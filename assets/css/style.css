@@ -158,7 +158,7 @@ body.nav-active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 4em;
+  font-size: 2em;
   z-index: 1;
 }
 .prev-btn {
@@ -172,7 +172,7 @@ body.nav-active {
 .prev-btn:hover,
 .next-btn:hover {
   color: var(--cinnamon-satin);
-  font-size: 3 rem;
+  font-size: 2 rem;
   transform: all 1.5s;
 }
 .slider {
