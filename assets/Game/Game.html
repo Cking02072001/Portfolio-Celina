@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Reaction Game</title>
+    <style>
+      @font-face {
+        font-family: Lausanne;
+        src: url("fonts/TWKLausanne-150.otf");
+      }
+      body {
+        margin-top: 40px;
+        padding: 0;
+        font-family: Lausanne;
+        backdrop-filter: blur(1px);
+        background-color: rgb(112, 191, 151);
+      }
+      #game-container {
+        position: relative;
+        width: 448px;
+        height: 708px;
+        margin: 0 auto;
+        background-image: url("./media/Background-game.png");
+        background-size: 100%;
+        
+      }
+      ul {
+        text-align: left;
+        padding-right: 30px;
+      }
+      li {
+        padding-bottom: 10px;
+        padding-right: 10px;
+      }
+      .target {
+        position: absolute;
+        padding: 8px;
+        color: rgb(0, 0, 0);
+        cursor:pointer;
+      }
+      .large {
+        font-size: 50px;
+      }
+      .small {
+        font-size: 24px;
+      }
+      .verysm {
+        font-size: 20px;
+      }
+      .mid {
+        font-size: 30px;
+      }
+      #score-container {
+        color:rgb(208, 1, 1);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+      }
+      #timer-container {
+        color:rgb(29, 103, 159);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+      }
+      #start-screen {
+        width: 428px;
+        max-height: 630px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        backdrop-filter: blur(6px);
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      #start-button {
+        font-size: 24px;
+        padding: 16px;
+        background-color: rgb(112, 191, 151);;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      #uberschrift{
+        color: rgb(208, 1, 1);
+      }
+      #win-screen,
+      #lose-screen {
+        width: 430px;
+        max-height: 708px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        backdrop-filter: blur(6px);
+        position: absolute;
+        margin-top: 300px;
+        color:#fff;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="game-container">
+        <div id="score-container">Score: <span id="score">0</span></div>
+        <div id="timer-container">Time: <span id="timer">25</span></div>
+      </div>
+      <div id="start-screen">
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 id="uberschrift">Anleitung für das Spiel:</h2>
+
+        <ul>
+          <li>Klicke auf "Start", um das Spiel zu beginnen.</li>
+          <li>
+            Sobald das Spiel gestartet ist, erscheinen Texte an verschiedenen
+            Positionen auf dem Bildschirm. Klicke sie!
+          </li>
+          <li>Für jeden richtigen Klick erhältst du Punkte.</li>
+          <li>Du hast 25 Sekunden Zeit.</li>
+          <li>
+            Wenn du mindestens 200 Punkte erreichst, gewinnst du 2 Tickets für
+            die Liste.
+          </li>
+          <li>
+            Nachdem das Spiel beendet ist, wirst du benachrichtigt, ob du
+            gewonnen hast oder nicht.
+          </li>
+        </ul>
+        <p>Viel Spaß und viel Glück!</p>
+        <button id="start-button">Start</button>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <p></p>
+      </div>
+
+      <div id="win-screen" style="display: none">
+        <h1>Gewonnen!</h1>
+        <p>Gratulation! Du hast 200 Punkte erreicht</p>
+        <p>
+          Du hast nun 30 Sekunden Zeit den QR Code zu scannen und dir deinen
+          Preis auf unsere Website zu sichern!
+        </p>
+        <img src="./media/frame.png" width="200px" />
+      </div>
+      <div id="lose-screen" style="display: none">
+        <h1>Verloren!</h1>
+        <p>Leider hast du nicht 200 Punkte erreicht.</p>
+      </div>
+    </section>
+
+    <script>
+      const TARGET_TEXTS = [
+        {
+          text: "E. Gutzwiller & Cie, Banquiers, Basel",
+          size: "verysm",
+          left: 85,
+          top: 235,
+        },
+        {
+          text: "E. Gutzwiller & Cie, Banquiers, Basel",
+          size: "verysm",
+          left: 0,
+          top: 75,
+        },
+        { text: "Liste", size: "large", left: 20, top: 325 },
+        { text: "Liste", size: "large", left: 20, top: 425 },
+        { text: "Liste", size: "large", left: 20, top: 375 },
+        { text: "Burgweg 15", size: "small", left: 85, top: 125 },
+        { text: "Burgweg 15", size: "small", left: 230, top: 150 },
+        { text: "4058 Basel", size: "small", left: 85, top: 150 },
+        { text: "4058 Basel", size: "small", left: 230, top: 175 },
+        { text: "Switzerland", size: "small", left: 85, top: 175 },
+        { text: "Switzerland", size: "small", left: 230, top: 125 },
+        { text: "12.-18. June 2023", size: "mid", left: 175, top: 285 },
+        { text: "12.-18. June", size: "mid", left: 175, top: 315 },
+        { text: "12.-18.", size: "mid", left: 175, top: 350 },
+        { text: "12.-18. June 2023", size: "mid", left: 175, top: 400 },
+        { text: "12.-18. June", size: "mid", left: 175, top: 430 },
+        { text: "12.-18.", size: "mid", left: 175, top: 465 },
+        { text: "Art Fair Basel", size: "mid", left: 230, top: 510 },
+        { text: "Art Fair Basel", size: "mid", left: 230, top: 560 },
+        { text: "Art Fair Basel", size: "mid", left: 230, top: 610 },
+        { text: "Art Fair Basel", size: "mid", left: 230, top: 660 },
+        { text: "Art Fair Basel", size: "mid", left: 20, top: 660 },
+      ];
+
+      const GAME_DURATION = 25;
+      const TARGET_CLICK_DURATION = 1000;
+      const MIN_SCORE = 200;
+
+      const gameContainer = document.getElementById("game-container");
+      const scoreContainer = document.getElementById("score");
+      const timerContainer = document.getElementById("timer");
+      const startScreen = document.getElementById("start-screen");
+      const startButton = document.getElementById("start-button");
+      const winScreen = document.getElementById("win-screen");
+      const loseScreen = document.getElementById("lose-screen");
+
+      let score = 0;
+      let timeLeft = GAME_DURATION;
+      let gameIntervalId;
+      let targetTimeoutId;
+
+      function startGame() {
+        startScreen.style.display = "none";
+        gameContainer.style.display = "block";
+        gameIntervalId = setInterval(updateTimer, 1000);
+        showRandomTarget();
+        gameContainer.addEventListener("click", handleTargetClick);
+      }
+
+      function endGame() {
+        clearInterval(gameIntervalId);
+        clearTimeout(targetTimeoutId);
+        gameContainer.removeEventListener("click", handleTargetClick);
+        gameContainer.style.display = "none";
+        if (score >= MIN_SCORE) {
+          winScreen.style.display = "block";
+          setTimeout(() => {
+            location.reload();
+          }, 30000);
+        } else {
+          loseScreen.style.display = "block";
+          setTimeout(() => {
+            location.reload();
+          }, 5000);
+        }
+      }
+
+      function showRandomTarget() {
+        const randomTarget =
+          TARGET_TEXTS[Math.floor(Math.random() * TARGET_TEXTS.length)];
+        const target = document.createElement("div");
+        target.classList.add("target");
+        if (randomTarget.size === "large") {
+          target.classList.add("large");
+        } else if (randomTarget.size === "small") {
+          target.classList.add("small");
+        } else if (randomTarget.size === "verysm") {
+          target.classList.add("verysm");
+        } else if (randomTarget.size === "mid") {
+          target.classList.add("mid");
+        }
+        target.style.top = `${randomTarget.top}px`;
+        target.style.left = `${randomTarget.left}px`;
+        target.textContent = randomTarget.text;
+        gameContainer.appendChild(target);
+        targetTimeoutId = setTimeout(() => {
+          target.remove();
+          showRandomTarget();
+        }, TARGET_CLICK_DURATION);
+      }
+
+      function handleTargetClick(event) {
+        const target = event.target.closest(".target");
+        if (target) {
+          target.remove();
+          score += 10;
+          scoreContainer.textContent = score;
+        }
+      }
+
+      function updateTimer() {
+        timeLeft--;
+        timerContainer.textContent = timeLeft;
+        if (timeLeft <= 0) {
+          endGame();
+        }
+      }
+
+      startButton.addEventListener("click", startGame);
+    </script>
+  </body>
+</html>

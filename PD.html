@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CK - Frankenstein</title>
+    <meta name="title" content="CK - Graphic and Webdesigner" />
+
+    <!----Icons & Fonts-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-light.svg"
+      type="image/svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="./Startseite.html" class="logo">
+          <img
+            src="./assets/images/logo-dark.svg"
+            width="64"
+            height="24"
+            alt="Celina home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="./Startseite.html" class="logo">
+              <img
+                src="./assets/images/logo-light.svg"
+                width="64"
+                height="24"
+                alt="Celina home"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="./Startseite.html" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#About" class="navbar-link">About</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#project-label" class="navbar-link">Projekte</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#Contact" class="navbar-link">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:celina.kammerhofer@gmail.com" class="contact-link"
+              >Celina.Kammerhofer@gmail.com</a
+            >
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="section hero under" aria-label="home">
+          <br>
+          <div class="container">
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+              >
+               Frankenstein Sammelkarten
+              </h1>
+              <br>
+            </div>
+<div>
+           <div>
+              <p style="font-size: large;"> Entdecke das Projekt "Once upon a diary" – 24 einzigartige Sammelkarten, die die tiefen Emotionen von Dr. Frankenstein und seinem Monster in beeindruckenden Illustrationen einfangen. Jedes Booster Pack enthält 3 Karten und bietet einen einzigartigen Einblick in die Gefühlswelt der legendären Figuren.</p>
+            </div>
+            
+          </div>
+
+        </section>
+        <br>
+        <br>
+                <h2 id="h2head">Fotos</h2>
+        <section class="gallery">
+          
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_01.jpg" width="200%" alt="image" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_02.jpg" alt="image" />
+          </div>
+    
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_03.jpg" width="200%" alt="image" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_04.jpg" alt="image" />
+          </div>
+              
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_05.jpg" width="200%" alt="image" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_06.jpg" alt="image" />
+          </div>
+      
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_07.jpg" width="200%" alt="image" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/PD/Celina-Kammerhofer_Bild_08.jpg" width="200%" alt="image" />
+          </div>
+  
+        </section>
+
+        <div id="overlay" onclick="closeOverlay()" style="display:none;"> <button id="prev" class="overlay-btn">&#10094;</button> <!-- Vorheriges Bild -->
+          <button id="next" class="overlay-btn">&#10095;</button> <!-- Nächstes Bild --></div>
+
+
+        <br>
+        <br>
+        <h2 id="h2head">PDF</h2>
+          <section class="imgslide">
+            <div class="slider">
+              <div class="slide">
+               
+          <p style="font-size: 30px; color: var(--cinnamon-satin);">Show</p>
+          <br>
+          <iframe src="./assets/pdf/PD/Celina-Kammerhofer_Show_compressed.pdf" allowfullscreen type="application/pdf" width="90%"> </iframe>  
+              </div>
+              <div class="slide">
+               
+                <p style="font-size: 30px; color: var(--cinnamon-satin);">Einzelansicht</p>
+                <br>
+                <iframe src="./assets/pdf/PD/Celina-Kammerhofer_Einzelansicht_compressed.pdf" allowfullscreen type="application/pdf" width="90%"> </iframe>  
+                    </div>
+                    <div class="slide">
+               
+                      <p style="font-size: 30px; color: var(--cinnamon-satin);">Druck</p>
+                      <br>
+                      <iframe src="./assets/pdf/PD/Celina-Kammerhofer_Druck_compressed.pdf" allowfullscreen type="application/pdf" width="90%"> </iframe>  
+                          </div>
+            </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+      </section>
+        <!--- ABOUT-->
+        <br id="Web" />
+      </article>
+    </main>
+    <!---Scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

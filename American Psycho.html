@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CK - American Psycho</title>
+    <meta name="title" content="CK - Graphic and Webdesigner" />
+
+    <!----Icons & Fonts-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-light.svg"
+      type="image/svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="./Startseite.html" class="logo">
+          <img
+            src="./assets/images/logo-dark.svg"
+            width="64"
+            height="24"
+            alt="Celina home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="./Startseite.html" class="logo">
+              <img
+                src="./assets/images/logo-light.svg"
+                width="64"
+                height="24"
+                alt="Celina home"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="./Startseite.html" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#About" class="navbar-link">About</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#project-label" class="navbar-link">Projekte</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#Contact" class="navbar-link">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:celina.kammerhofer@gmail.com" class="contact-link"
+              >Celina.Kammerhofer@gmail.com</a
+            >
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="section hero under" aria-label="home">
+          <br>
+          <div class="container">
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+              >
+                American Psycho - Filmmagazin
+              </h1>
+              <br>
+              <div
+              class="btn-wrapper"
+              data-reveal-delay="0.75s"
+              style="justify-content: left;"
+            >
+
+              <a href="./assets/dl/Druckdateien als PDF + Bildschirm PDF.zip"data-reveal="right"
+              download class="btn btn-primary"
+              >Download die Datei</a
+            >
+            </div>
+            </div>
+<div>
+           <div>
+              <p style="font-size: large;"> Das Projekt bestand aus einem intensiven, <b>sehr intensiven</b> Auseinandersetzen mit dem Film "American Psycho". Es wurden qualitative und quantitative Daten gesammelt, welche in Verbindung zur grafischen Gestaltung zu einem Filmmagazin schlussendlich wurden.</p>
+            </div>
+            
+          </div>
+
+        </section>
+        <br>
+        <br>
+        <section class="imgslide" > <h2 id="h2head">PDF</h2>
+          <div class="slider">
+            <div class="slide">
+          <iframe src="./assets/pdf/IED-American Psycho Celina Kammerhofer.pdf" allowfullscreen type="application/pdf" width="90%"> </iframe>  
+ </div> </div></section>
+        <!--- ABOUT-->
+        <br id="Web" />
+      </article>
+    </main>
+    <!---Scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

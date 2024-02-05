@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CK - Graphic and Webdesigner</title>
+    <meta name="title" content="CK - Graphic and Webdesigner" />
+
+    <!----Icons & Fonts-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-light.svg"
+      type="image/svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/filter.js"></script>
+  </head>
+
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo-dark.svg"
+            width="64"
+            height="24"
+            alt="Celina home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo-light.svg"
+                width="64"
+                height="24"
+                alt="Celina home"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="#About" class="navbar-link">About</a>
+            </li>
+            <li>
+              <a href="#project-label" class="navbar-link">Projekte</a>
+            </li>
+            <li>
+              <a href="#Contact" class="navbar-link">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:celina.kammerhofer@gmail.com" class="contact-link"
+              >Celina.Kammerhofer@gmail.com</a
+            >
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="section hero" aria-label="home">
+          <br>
+          <br>
+          <br>
+          <div class="container">
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+              >
+                Grafik und Webdesigner aus Österreich
+              </h1>
+
+              <p id="aboutid" data-reveal="top" data-reveal-delay="1s">
+                <a href="#About">Hey, ich bin Celina!</a>
+              </p>
+
+              <div
+                class="btn-wrapper"
+                data-reveal="top"
+                data-reveal-delay="1.5s"
+              >
+                <a href="#project-label" class="btn btn-primary"
+                  >Meine Projekte</a
+                >
+
+                <a href="#Contact" class="btn btn-secondary" style="background-color: rgba(255, 255, 255, 0.237); color: var(--cinnamon-satin); border:2px solid var(--cinnamon-satin);"
+                  >Kontaktiert mich!</a
+                >
+              </div>
+            </div>
+<!-- <div>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.41/build/spline-viewer.js"></script>
+  <spline-viewer url="https://prod.spline.design/DX7MyxI3PCRrPi75/scene.splinecode"></spline-viewer></div> -->
+
+
+           <div class="Portrait" data-reveal="right" data-reveal-delay="0.25s"  height="150%">
+                <img
+                src="./assets/images/Portrait.png"
+                width="100%"
+                height="50%"
+                loading="lazy"
+              />
+            </div>
+            
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+        </section>
+
+        <!--- ABOUT-->
+        <br id="About" />
+        <section class="section about">
+          <div class="container">
+            <div class="wrapper">
+              <div data-reveal="left">
+                <section>
+                <h2 class="h2 section-title">About me</h2>
+
+                <p class="section-text">
+                  22-jähriges österreichisches Mädchen, das in einem sehr
+                  kleinen Dorf zwischen den Ötztaler Alpen in Tirol aufgewachsen
+                  ist. Als Kind mochte ich "logische" Dinge und das Arbeiten mit
+                  Computern faszinierte mich. Als die Pubertät einsetzte, ließ
+                  meine Liebe zur simplen Mathematik nach und meine Liebe zu
+                  allem Kreativen und Sprachbezogenem wuchs.
+                </p>
+                </section>
+              </div>
+
+              <!---Audio-->
+              <div data-reveal="left" data-reveal-delay="0.75s">
+                
+                <section class="Music">
+                  <div>
+                    <div>
+                      <b style="font-size: 20px">Rhinestone Eyes</b>
+                      <b class="int">by Gorillaz</b>
+                    </div>
+                    <audio controls loop>
+                      <source
+                        src="./assets/audio/Gorillaz - Rhinestone Eyes _Storyboard Film_ (Official Music Video).mp3"
+                      />
+                    </audio>
+                  </div>
+                  <div>
+                    <b style="font-size: 20px"> Why'd you only call me </b>
+                    <b class="int">by Arctic Monkeys</b>
+                    <div>
+                      <audio controls loop>
+                        <source
+                          src="./assets/audio/Arctic Monkeys - Why'd.mp3"
+                        />
+                      </audio>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div data-reveal="left">
+                <h2 class="h2 section-title">Skills</h2>
+
+                <p class="section-text">Meine Hardskills</p>
+
+                <br />
+                <ul class="progress-list" data-reveal="left">
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>Figma</p>
+  
+                      <span class="span">90 %</span>
+                    </div>
+  
+                    <div class="progress">
+                      <div
+                        class="progress-fill"
+                        style="width: 90%; background-color:wheat"
+                      ></div>
+                    </div>
+                  </li>
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>Procreate</p>
+
+                      <span class="span">90 %</span>
+                    </div>
+
+                    <div class="progress">
+                      <div
+                        class="progress-fill"
+                        style="width: 90%; background-color:wheat"
+                      ></div>
+                    </div>
+                  </li>
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>Office 365</p>
+
+                      <span class="span">85 %</span>
+                    </div>
+
+                    <div class="progress">
+                      <div
+                        class="progress-fill"
+                        style="width: 85%; background-color:wheat"
+                      ></div>
+                    </div>
+                  </li>
+
+
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>Adobe</p>
+
+                      <span class="span">80 %</span>
+                    </div>
+
+                    <div class="progress">
+                      <div
+                        class="progress-fill"
+                        style="width: 80%; background-color: wheat"
+                      ></div>
+                    </div>
+                  </li>
+
+                
+                </ul>
+              </div>
+
+              <!---Progressbar-->
+              <ul class="progress-list" data-reveal="right">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>HTML/CSS/Javascript</p>
+
+                    <span class="span">70 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 70%; background-color: wheat"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Glyphs</p>
+
+                    <span class="span">70 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 70%; background-color:#f5deb3"
+                    ></div>
+                  </div>
+                </li>
+                
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Blender</p>
+                    <span class="span">70 %</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 70%; background-color: wheat;"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Java</p>
+
+                    <span class="span">65 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 65%; background-color: wheat"
+                    ></div>
+                  </div>
+                </li>
+                
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>C#</p>
+
+                    <span class="span">50 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 50%; background-color:wheat">
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <br />
+            <br />
+            <ul class="grid-list">
+              <li data-reveal="bottom" data-reveal-delay="0s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-5.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Figma UX/UI</h3>
+                  <p class="card-text">
+                    Für schnelle Prototypen oder ausgearbeitete Layouts liebe
+                    ich es in Figma zu arbeiten.
+                  </p>
+                </div>
+              </li>
+              <li data-reveal="bottom">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-2.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="Phone icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Procreate</h3>
+                  <p class="card-text">
+                    Digitales Illustrieren vor allem in Procreate liegt mir seit
+                    2018 sehr!
+                  </p>
+                </div>
+              </li>
+              <li data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-9.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Office 365</h3>
+                  <p class="card-text">
+                  Langjährige Erfahrung in diversen Office Produkten.
+                  </p>
+                </div>
+              </li>
+              <li data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-4.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Adobe Illustrator/Indesign/PS</h3>
+                  <p class="card-text">
+                    Als Grafiker sind diese drei Programme wie die heiligen
+                    Dreifaltigkeiten und somit ein Muss! Mein Schwerpunkt liegt
+                    allerdings bei Illustrator und Indesign!
+                  </p>
+                </div>
+              </li>
+              <li data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-1.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web design icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Web Design</h3>
+
+                  <p class="card-text">
+                    Mein Werdegang began in der Handelsakademie in Imst, wo ich
+                    ein Jahr die IT Klasse besuchte und simple HTML und CSS
+                    Skills lernte. Javascript hab ich mir nebenbei mal
+                    angelernt.
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.3s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-6.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Glyphs</h3>
+                  <p class="card-text">
+                    Eine Font zu generieren ist leichter als gedacht! Seit März
+                    2023 befasse ich mich intensiv mit diesem Programm und mit
+                    der Thematik "Schriftgestaltung".
+                  </p>
+                </div>
+              </li>
+              <li data-reveal="bottom" data-reveal-delay="0.5s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-7.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web development icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Blender</h3>
+
+                  <p class="card-text">
+                    Modelieren, sowie Animieren und simple Prototypen lieb ich
+                    in Blender zu erschaffen. Egal ob es ein Rig für eine low
+                    poly Figur sein darf, oder für eine Verpackung, in Blender
+                    bekomm ich es hin!
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.6s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-3.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="development icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Java</h3>
+
+                  <p class="card-text">
+                    Meine ersten Schritte mit Java machte ich bereits in 2015
+                    mit Netbeans und Eclipse. Heute verwende ich es für reine
+                    Processing — also Generatives Coding — Projekte.
+                  </p>
+                </div>
+              </li>
+
+            
+              <li data-reveal="bottom" data-reveal-delay="0.8s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-8.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">C#</h3>
+                  <p class="card-text">
+                    Programmieren in C# für ein Projekt mit Unity ist mehr wie
+                    ein Hobby. Ich bin nicht hervorragend, aber ich kenn mich
+                    mit den Basics aus.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!--PROJECT-->
+        <br id="project-label" />
+        <section class="section project">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title">Projekte</h2>
+                <br />
+                <p class="section-text">
+                  Sieh dir meine Projekte ruhig an.
+                </p>
+                <br />
+              </div>
+            </div>
+
+            <section class="übersicht">
+              <div class="filter">
+                <ul>
+                  <li id="f-alle">Alle</li>
+                  <li id="f-Blend">Blender</li>
+                  <li id="f-CC">Creative Coding</li>
+                  <li id="f-IED">Publikationsdesign</li>
+                  <li id="f-IK">Werbung/Kampagne</li>
+                  <li id="f-CI">Logodesign</li> 
+                    <li id="f-MS">Modulschrift</li>
+                  <li id="f-webdesign">UI/UX</li>
+          
+                </ul>
+              </div>
+              <br>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 webdesign thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/portfolio/MacBook Pro 16-3.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Die Liste"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Webdesign</p>
+                      <h3 class="h3 card-title">
+                        Portfolio Retro
+                      </h3>
+
+                      <p class="card-text">
+                        Eine alternative Portfolio Seite im Stile von 80er Computer Retro Nostalgie
+                      </p>
+
+                      <a
+                        href="./RetroPortfolio.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 webdesign thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/website.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Die Liste"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Webdesign</p>
+                      <h3 class="h3 card-title">
+                        Portfolio
+                      </h3>
+
+                      <p class="card-text">
+                        Meine selbstprogrammierte Portfilio Website.
+                      </p>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 webdesign thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/UI/SPAR.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Die Liste"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">UI/UX</p>
+                      <h3 class="h3 card-title">
+                        SPAR App + Watch: Neue Features
+                      </h3>
+
+                      <p class="card-text">
+                        Eine Erweiterung, Verfeinerung und Nachbau der Spar App + eine mögliche Umsetzung der Spar App auf der Apple Watch
+                      </p>
+
+                      <a
+                        href="./Spar-App.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 CI webdesign thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/UI/Whiskey/MacBook Pro 16.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="West Amber"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Webdesign</p>
+                      <h3 class="h3 card-title">
+                        West Amber
+                      </h3>
+
+                      <p class="card-text">
+                        Eine Responsive Website für ein fiktives Whiskey Unternehmen
+                      </p>
+
+                      <a
+                        href="./West Amber.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 CI webdesign thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Torn_Posters.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Mandarfner Hof"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Branding + Webdesign</p>
+                      <h3 class="h3 card-title">
+                        Hotel Mandarfner Hof Rebranding
+                      </h3>
+
+                      <p class="card-text">
+                        <b>Coming Soon! – Mein Bachelorprojekt</b> Ein Rebranding mit Website und App für Hotel Mandarfner Hof
+                      </p>
+
+                      <a
+                        class="btn-text"
+                      >
+                        <span class="span"><s>Read more</s></span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 IK thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Steelbox/Steelbox.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Die Liste"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">IK</p>
+                      <h3 class="h3 card-title">
+                        Die Liste - Integrierte Kampagne
+                      </h3>
+
+                      <p class="card-text">
+                        Eine umfangreiche Kampagne für die Liste, Art Basel
+                      </p>
+                      
+
+                      <a
+                        href="./IK.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 IK CI thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/GW/Render_5.jpg"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Die Liste"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Logodesign/Werbung/Verpackung</p>
+                      <h3 class="h3 card-title">
+                        NUDEIFUL - Lidschattenpalette
+                      </h3>
+
+                      <p class="card-text">
+                        Semesterprojekt: Ein Produkt suchen, passende Verpackung erstellen, passendes CI und ein Werbespotkonzept
+                      </p>
+                      <a
+                      href="./Nudeiful.html"
+                      class="btn-text"
+                      style="color: var(--cinnamon-satin)"
+                    >
+                      <span class="span">Read more</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="grid-list">
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 IED thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/PD/Celina-Kammerhofer_Bild_04.jpg"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Die Liste"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Publikationsdesign</p>
+                      <h3 class="h3 card-title">
+                       Once Upon A Diary – Frankenstein Sammelkarten
+                      </h3>
+
+                      <p class="card-text">
+                        24 verschiedene Frankenstein Sammelkarten rund ums Thema Gefühle.
+                      </p>
+                      <a
+                      href="./PD.html"
+                      class="btn-text"
+                      style="color: var(--cinnamon-satin)"
+                    >
+                      <span class="span">Read more</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                      <br />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 thumbnail webdesign"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Webdesign1.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Webdesign_project"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Webdesign</p>
+                      <h3 class="h3 card-title">Gelcuore</h3>
+
+                      <p class="card-text">
+                        Projekt für das Fach Webdesign an der Uni. Auch genannt
+                        "mein Einstieg in Figma"
+                      </p>
+
+                      <a
+                        href="./Webdesign_project.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                      <br />                    </div>
+                  </div>
+                </li>
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 CI thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/Mikit/MikitRender.png"
+                      width="300"
+                      height="267"
+                      loading="lazy"
+                      alt="Card"
+                      class="w-100"
+                    />
+                  </figure>
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Logodesign</p>
+
+                      <h3 class="h3 card-title">MIKIT</h3>
+
+                      <p class="card-text">
+                        Die komplette Guidline für ein fiktives Unternehmen!
+                      </p>
+                      <a
+                        href="./Mikit.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+
+                 
+                  </div>
+                </li>
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 CI thumbnail"
+                    style="background-color: #ffffff29"
+                  >  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/Mutter Erde 2.png"
+                      width="500"
+                      height="267"
+                      loading="lazy"
+                      alt="Card"
+                      class="w-100"
+                    />
+                  </figure>
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Logodesign</p>
+
+                      <h3 class="h3 card-title">MHOF - Zimmerlogos und co.</h3>
+
+                      <p class="card-text">
+                        Logos für Zimmerkategorien, Design einer Getränkekarte und Logo für "s'hütterl" für Hotel Mandarfner Hof im Pitztal.
+                      </p>
+                      <a
+                        href="./MHOF Zimmerlogodesign.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+
+                  
+                  </div>
+                </li>
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 CI thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Mena/Mena-card.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Mena"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">LOGODESIGN</p>
+                      <h3 class="h3 card-title">
+                        MENA - Make-Up Artist & Hair Stylist
+                      </h3>
+
+                      <p class="card-text">
+                      Logodesign mit Farbgebung für "MENA" von Makeup Artist Magdalena Strobl
+                      </p>
+
+                      <a
+                        href="./Mena.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+               
+              
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 Blender thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Frame_0273.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Mario Pralinen"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Blender</p>
+                      <h3 class="h3 card-title">
+                        Super Mario Bros inspirierte Pralinen
+                      </h3>
+
+                      <p class="card-text">
+                      Bislang eines meiner Highlights und Meilenstein meiner Blender Karriere – Super Mario Bros Pralinen!
+                      </p>
+
+                      <a
+                        href="./SuperMarioPralinen.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 Blender thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Pichu.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Pichu"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Blender</p>
+                      <h3 class="h3 card-title">
+                        Pichu's Daycare
+                      </h3>
+
+                      <p class="card-text">
+                      Ein kleines Pokemon "Pichu" wurde selbst modeliert und gerigged. Daraus entstand eine kurze Animation und zusätzlich ein selbsgebautes Enviorment konstruiert, welches den Figuren leben einhaucht.
+                      </p>
+
+                      <a
+                        href="./Pichusdaycare.html"
+                        class="btn-text"
+                        style="color:var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 CC web thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Card1.PNG"
+                        width="500"
+                        height="267"
+                        loading="lazy"
+                        alt="Card"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Generative Gestaltung</p>
+                      <h3 class="h3 card-title">
+                      Generative Business-Cards
+                      </h3>
+
+                      <p class="card-text">
+                        Generativ gestaltete Visitenkarten, programmiert in
+                        Java, die bestimmte Komponente random bei Mausklick
+                        verändern.
+                      </p>
+
+                      <a
+                        href="./Businesscards.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                      
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a><br>
+                      <a
+                        href="./assets/dl/P1_Businesscard_Celina_Kammerhofer.zip"
+                        download
+                        class="btn-text"
+                        style="color:var(--blue)"
+                      >
+                        <span class="span">Download Source Code</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              
+
+
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 CC webdesign thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Choke.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Choke"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Generative Gestaltung</p>
+                      <h3 class="h3 card-title">
+                        Musik Visualisierung von CHOKE
+                      </h3>
+
+                      <p class="card-text">
+                        Interaktiv coded in Processing .P5. Beim Abspielen über
+                        den Browser, bitte im Vollbild Modus anschauen!
+                      </p>
+                      <a
+                      href="./choke.html"
+                      class="btn-text"
+                      style="color: var(--cinnamon-satin)"
+                      target="_blank"
+                    >
+                      <span class="span"> Teste es aus</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                    <br>
+                      <a
+                        href="./assets/dl/Kammerhofer_Celina_P2.zip"
+                        download
+                        class="btn-text"
+                        style="color: var(--blue)"
+                      >
+                        <span class="span">Download Code</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                   
+                    </div>
+                  </div>
+                </li>
+               
+                <li class="thumbnail">
+                  <div
+                   class="project-card project-card-2 MS" 
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/Screenshot 2023-06-01 at 17.09.14.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="Webdesign_project"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">
+                        Modulschrift
+                      </p>
+                      <h3 class="h3 card-title">Celestella</h3>
+
+                      <p class="card-text">
+                        Meine Display Font. Made in Glyphs auch für ein
+                        Uniprojekt!
+                      </p>
+
+                      <a
+                        href="./Modulschrift.html"
+                        class="btn-text"
+                        style="color:var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                      <br>
+                      <a
+                        href="./assets/dl/Celestella.zip"
+                        download
+                        class="btn-text"
+                        style="color: wheat"
+                      >
+                        <span class="span">or Download the font</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+               <!-- <li class="thumbnail">
+                  <div
+                    class="project-card project-card-1 Processing thumbnail"
+                    style="background-color: #e8dde56f"
+                  >
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag" style="color: #e03f77">Processing</p>
+                      <h3 class="h3 card-title">MS Paint, but I made it</h3>
+
+                      <p class="card-text">
+                        Mein erstes Projekt im Bereich creative coding. Simple,
+                        einfach, aber sehr witzig!
+                      </p>
+
+                      <a
+                        href="./assets/dl/Processing_MSPaint_but_Celina_made_it.zip"
+                        download
+                        class="btn-text"
+                        style="color: #a72a5e"
+                      >
+                        <span class="span">Download Source Code</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                    <figure class="card-banner" data-reveal="right">
+                      <img
+                        src="./assets/images/myCanvas.png"
+                        width="300"
+                        height="100"
+                        loading="lazy"
+                        alt="Card"
+                        class="w-100"
+                      />
+                    </figure>
+                  </div>
+                </li>-->
+               <!--  <li class="thumbnail">
+                  <div
+                    class="project-card project-card-1 Illu thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag" style="color: #171717">Illustration</p>
+
+                      <h3 class="h3 card-title">The world of Indie Rock songs</h3>
+
+                      <p class="card-text">
+                        Illustrations Abschlussprojekt
+                      </p>
+                      <a
+                        href="./indierock.html"
+                        class="btn-text"
+                        style="color: #272727"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+
+                      <a
+                        href="./assets/dl/The world of Alt.pdf.zip"
+                        download
+                        class="btn-text"
+                        style="color: #282828"
+                      >
+                        <span class="span">Download PDF Poster</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+
+                    <figure class="card-banner" data-reveal="right">
+                      <img
+                        src="./assets/images/billi.png"
+                        height="267"
+                        loading="lazy"
+                        alt="Card"
+                        class="w-100"
+                      />
+                    </figure>
+                  </div>
+                </li> -->
+               <!--  <li class="thumbnail">
+                  <div
+                    class="project-card project-card-1 IED EPUB thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag" style="color: #196b1c">EPUB</p>
+
+                      <h3 class="h3 card-title">Gameboy R</h3>
+
+                      <p class="card-text">
+                        Ein Inserat + Folder für einen Relaunch eines "vintage" Produkts.
+                      </p>
+                      <a
+                        href="./GameboyR.html"
+                        class="btn-text"
+                        style="color: #074814"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+
+                    <figure class="card-banner" data-reveal="right">
+                      <img
+                        src="./assets/images/Inserat/Folder Celina.png"
+                        width="500"
+                        height="267"
+                        loading="lazy"
+                        alt="Card"
+                        class="w-100"
+                      />
+                    </figure>
+                  </div>
+                </li> -->
+                <li class="thumbnail">
+                  <div
+                    class="project-card project-card-2 IED thumbnail"
+                    style="background-color: #ffffff29"
+                  >
+                    <figure class="card-banner" data-reveal="top">
+                      <img
+                        src="./assets/images/American Psycho shot space.png"
+                        width="500"
+                        height="auto"
+                        loading="lazy"
+                        alt="American Psycho"
+                        class="w-100"
+                      />
+                    </figure>
+
+                    <div class="card-content" data-reveal="left">
+                      <p class="card-tag">Publikationsdesign </p>
+                      <h3 class="h3 card-title">
+                        American Psycho - Das Magazin zum Film
+                      </h3>
+
+                      <p class="card-text">
+                      Ein Projekt aus den Bereichen "Editorial", "Datenvisualisierung" und "Magazingestaltung"
+                      </p>
+
+                      <a
+                        href="./American Psycho.html"
+                        class="btn-text"
+                        style="color: var(--cinnamon-satin)"
+                      >
+                        <span class="span">Read more</span>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <!--Contact-->
+        <br id="Contact"/>
+        <section class="section contact">
+          <div class="container">
+            <h2 class="h2 section-title">Kontaktiert mich</h2>
+            <br /><br />
+            <div class="contact-card" style="background-color: #ffffff29;">
+              <div style="color: wheat;">
+                <h3>
+                  Celina Maria Kammerhofer
+                </h3>
+                <h4>
+                  Mandarfen 81
+                  <br>6481 St.Leonhard
+                  <br> +43 664 88385633
+
+                </h4>
+              </div>
+              <div
+                class="contact-content"
+                data-reveal="bottom"
+                data-reveal-delay="1.00s"
+              >
+                <h2 class="h2 section-title">Hit me up!</h2>
+
+                <p class="section-text" style="color: white;">
+                  Schreibt mir ruhig eine Nachricht!
+                </p>
+              </div>
+
+              <button
+                action=""
+                class="contact"
+                data-reveal="bottom"
+                data-reveal-delay="1.25s"
+                style="place-items: center;"
+              >
+                <a
+                  href="mailto:celina.k988@gmail.com"
+                  class="btn btn-primary"
+                  >Send message</a
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!---Scripts -->
+    <script>
+
+let mhof = document.getElementsByClassName("m-hof-rebranding")[0];
+mhof.addEventListener("mouseover",()=>{
+  mhof.src = "./assets/images/coming soon.png"
+})
+mhof.addEventListener("mouseleave",()=>{
+  mhof.src = "./assets/images/Torn Posters.png"
+})
+
+    </script>
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+  </body>
+</html>

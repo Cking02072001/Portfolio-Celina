@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CK - Spar App</title>
+    <meta name="title" content="CK - Graphic and Webdesigner" />
+
+    <!----Icons & Fonts-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-light.svg"
+      type="image/svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="./Startseite.html" class="logo">
+          <img
+            src="./assets/images/logo-dark.svg"
+            width="64"
+            height="24"
+            alt="Celina home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="./Startseite.html" class="logo">
+              <img
+                src="./assets/images/logo-light.svg"
+                width="64"
+                height="24"
+                alt="Celina home"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="./Startseite.html" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#About" class="navbar-link">About</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#project-label" class="navbar-link">Projekte</a>
+            </li>
+            <li>
+              <a href="./Startseite.html#Contact" class="navbar-link">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:celina.kammerhofer@gmail.com" class="contact-link"
+              >Celina.Kammerhofer@gmail.com</a
+            >
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="section hero under" aria-label="home">
+          <br>
+          <div class="container">
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+              >
+                SPAR Erweiterung App + Watch
+              </h1>
+              <br>
+            </div>
+<div>
+           <div>
+              <p style="font-size: large;"> Seminarprojekt für Interface Design. Ziel war es die Spar App um drei Features zu erweitern, verbessern und zu Prototypen. Dabei lag der Fokus dem CI so nah wie möglich zu kommen</p>
+            </div>
+            
+          </div>
+
+        </section>
+        <br>
+        <br>
+                <h2 id="h2head">Fotos</h2>
+
+
+
+        <section class="gallery">
+          
+          <div class="image">
+            <img src="./assets/images/UI/iPhone 13 Pro.png" width="200%" alt="image" />
+          </div>
+    
+          <div class="image">
+            <img src="./assets/images/UI/iPhone 15 Pro.png" width="200%" alt="image" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/UI/Apple Watch Ultra.png" height="90%" alt="image" />
+          </div>
+                  <div class="image">
+            <img src="./assets/images/UI/w.png" alt="image"/>
+          </div>  <div class="image">
+            <img src="./assets/images/UI/SPAR/Screenshot 2024-02-01 at 17.06.52.png" width="200%" alt="image" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/UI/Start Karte — All Hands — Right hand with watch.png" width="200%" alt="image" />
+          </div>
+          <div class="image">
+            <img src="./assets/images/UI/SPAR/Screenshot 2024-02-01 at 17.04.09.png" width="200%" alt="image" />
+          </div>
+         
+          <div class="image">
+            <img src="./assets/images/UI/SPAR/Screenshot 2024-02-01 at 17.06.32.png" width="200%" alt="image" />
+          </div>
+        
+    
+  
+        </section>
+
+        <div id="overlay" onclick="closeOverlay()" style="display:none;"> <button id="prev" class="overlay-btn">&#10094;</button> <!-- Vorheriges Bild -->
+          <button id="next" class="overlay-btn">&#10095;</button> <!-- Nächstes Bild --></div>
+
+
+        <br>
+        <br>
+        <h2 id="h2head">Prototypen</h2>
+        <section class="imgslide">
+          <div class="slider">
+            <div class="slide">
+         <video src="./assets/video/App.mp4" controls loop alt="App" height="450"></video>
+            </div>
+            <div class="slide">
+         <video src="./assets/video/Watch.mov" controls loop alt="Watch" height="450"></video>
+            </div><div class="slide">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6xBV3YVGvbSqBsshojNOpe%2FSpar-App%3Fpage-id%3D0%253A1%26node-id%3D1-79%26starting-point-node-id%3D1%253A79%26mode%3Ddesign%26t%3D2YLWf2oLqh9C323q-1" allowfullscreen></iframe>            
+          </div>
+        <div class="slide">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYURI0WgWijgKEoIkMK2wRL%2FSpar-Watch%3Fpage-id%3D0%253A1%26node-id%3D1-3%26starting-point-node-id%3D1%253A3%26mode%3Ddesign%26t%3Dag11IvIbiCxCjl4k-1" allowfullscreen></iframe>      
+        </div>
+          </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+      </section>
+        <!--- ABOUT-->
+        <br id="Web" />
+      </article>
+    </main>
+    <!---Scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
