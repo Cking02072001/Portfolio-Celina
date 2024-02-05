@@ -1,5 +1,5 @@
 "use strict";
-
+try {
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
@@ -7,6 +7,10 @@ const addEventOnElements = function (elements, eventType, callback) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+
+  try{
+
+ 
   let currentImageIndex = 0;
   const images = document.querySelectorAll('.gallery img');
   const overlay = document.getElementById('overlay');
@@ -47,6 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
   overlay.addEventListener('click', function(e) {
     this.style.display = 'none'; // Versteckt den Overlay
   });
+} catch (e){
+   
+}
 });
 
 
@@ -104,6 +111,8 @@ window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
 
 document.addEventListener("DOMContentLoaded", function () {
+  try{
+
   let slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
 
@@ -138,6 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   prevBtn.addEventListener("click", prevSlide);
   nextBtn.addEventListener("click", nextSlide);
+} catch (e){
+
+}
 });
 
 
@@ -153,8 +165,6 @@ const buttonCI = document.querySelector("#f-CI");
 const buttonIED = document.querySelector("#f-IED");
 const buttonBlend = document.querySelector("#f-Blend")
 
-console.log(allProjects);
-
 // Filter funktion
 function filterProjects(category) {
   allProjects.forEach((project) => {
@@ -169,6 +179,7 @@ function filterProjects(category) {
 }
 
 // Event Listener. Hier wird angegeben, was gefiltert wird nach den ID's der jeweiligen Kategorie
+try{
 buttonAlle.addEventListener("click", () => {
   filterProjects("Alle");
 });
@@ -195,7 +206,9 @@ buttonIED.addEventListener("click", () => {
 buttonBlend.addEventListener("click", () => {
   filterProjects("Blender");
 }); 
+} catch (e){
 
+}
 /*
 const allProjects = document.querySelectorAll(".project-card");
 const filterButtons = document.querySelectorAll(".filter ul li");
@@ -231,3 +244,6 @@ filterButtons.forEach((button) => {
   });
 });*/
 
+} catch (e){
+  
+}
