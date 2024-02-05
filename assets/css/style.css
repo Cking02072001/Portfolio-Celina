@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Teko&display=swap);
 @font-face {
   font-family: "celestella";
-  src: url("./assets/fonts/Celestella-Regular.woff");
+  src: url("../fonts/Celestella-Regular.woff");
 }
 
 .video-container {
