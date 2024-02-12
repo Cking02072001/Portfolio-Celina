@@ -153,7 +153,7 @@ body.nav-active {
 
 
 .prev-btn,
-.next-btn {
+.next-btn, .prev-btn2, .next-btn2 {
   color: white;
   position: absolute;
   top: 50%;
@@ -161,16 +161,18 @@ body.nav-active {
   font-size: 2em;
   z-index: 1;
 }
-.prev-btn {
+.prev-btn, .prev-btn2 {
   left: 1%;
 }
 
-.next-btn {
+.next-btn, .next-btn2 {
   right: 1%;
 }
 
 .prev-btn:hover,
-.next-btn:hover {
+.next-btn:hover,
+.next-btn2:hover,
+.prev-btn2:hover {
   color: var(--cinnamon-satin);
   font-size: 2 rem;
   transform: all 1.5s;
@@ -1222,12 +1224,12 @@ form textarea {
     padding-right: 12%;
   }
 
-  .prev-btn {
+  .prev-btn, .prev-btn2 {
     left: 5%;
     font-size: 5rem;
   }
 
-  .next-btn {
+  .next-btn, .next-btn2 {
     right: 5%;
     font-size: 5rem;
   }

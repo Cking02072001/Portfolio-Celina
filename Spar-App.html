@@ -147,7 +147,7 @@
 
         <br>
         <br>
-        <h2 id="h2head">Prototypen</h2>
+        <h2 id="h2head">Videos</h2>
         <section class="imgslide">
           <div class="slider">
             <div class="slide">
@@ -155,18 +155,24 @@
             </div>
             <div class="slide">
          <video src="./assets/video/Watch.mov" controls loop alt="Watch" height="450"></video>
-            </div><div class="slide">
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6xBV3YVGvbSqBsshojNOpe%2FSpar-App%3Fpage-id%3D0%253A1%26node-id%3D1-79%26starting-point-node-id%3D1%253A79%26mode%3Ddesign%26t%3D2YLWf2oLqh9C323q-1" allowfullscreen></iframe>            
-          </div>
-        <div class="slide">
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYURI0WgWijgKEoIkMK2wRL%2FSpar-Watch%3Fpage-id%3D0%253A1%26node-id%3D1-3%26starting-point-node-id%3D1%253A3%26mode%3Ddesign%26t%3Dag11IvIbiCxCjl4k-1" allowfullscreen></iframe>      
-        </div>
+            </div>
           </div>
         <button class="prev-btn">&#10094;</button>
         <button class="next-btn">&#10095;</button>
       </section>
-        <!--- ABOUT-->
-        <br id="Web" />
+      <br>
+      <br>
+      <h2 id="h2head">Prototypen</h2>
+        <section class="imgslide">
+          <div class="ptslider">
+            <div class="ptslide">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6xBV3YVGvbSqBsshojNOpe%2FSpar-App%3Fpage-id%3D0%253A1%26node-id%3D1-79%26starting-point-node-id%3D1%253A79%26mode%3Ddesign%26t%3D2YLWf2oLqh9C323q-1" allowfullscreen></iframe>  </div>          
+         <div class="ptslide"> 
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"width="100%" height="800"src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYURI0WgWijgKEoIkMK2wRL%2FSpar-Watch%3Fpage-id%3D0%253A1%26node-id%3D1-3%26starting-point-node-id%3D1%253A3%26mode%3Ddesign%26t%3Dag11IvIbiCxCjl4k-1" allowfullscreen></iframe>      </div>
+          </div>
+          <button class="prev-btn2">&#10094;</button>
+        <button class="next-btn2">&#10095;</button>
+        </section>
       </article>
     </main>
     <!---Scripts -->
@@ -181,5 +187,43 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      let ptslides = document.querySelectorAll(".ptslide");
+  let currentSlider = 0;
+
+  function showSlider(n) {
+    for (let i = 0; i < ptslides.length; i++) {
+      ptslides[i].style.display = "none";
+    }
+    ptslides[n].style.display = "block";
+    currentSlider = n;
+  }
+
+  function nextSlider() {
+    currentSlider++;
+    if (currentSlider >= ptslides.length) {
+      currentSlider = 0;
+    }
+    showSlider(currentSlider);
+  }
+
+  function prevSlider() {
+    currentSlider--;
+    if (currentSlider < 0) {
+      currentSlider = ptslides.length - 1;
+    }
+    showSlider(currentSlider);
+  }
+
+  showSlider(currentSlider);
+
+  const prevBtn2 = document.querySelector(".prev-btn2");
+  const nextBtn2 = document.querySelector(".next-btn2");
+
+  prevBtn2.addEventListener("click", prevSlider);
+  nextBtn2.addEventListener("click", nextSlider);
+
+;
+    </script>
   </body>
 </html>
